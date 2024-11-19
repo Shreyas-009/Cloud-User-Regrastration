@@ -1,26 +1,21 @@
-# File Handling and User Authentication Project
-
-This project demonstrates file handling for user data and authentication using JSON Web Tokens (JWT) with a Node.js/Express.js backend and a React frontend.
+# MongoDB Atlas User Registration Project
 
 ## Links
-
-- Frontend: [File Handling JWT Frontend]('https://file-based-user-data-storage.vercel.app/)
-- Backend: [File Handling JWT Backend]('https://file-based-user-data-storage-backend.onrender.com/')
-- Video Demonstration: [Download Video](/demon.mp4)
+* Frontend: [MongoDB Atlas User Registration Frontend]('https://cloud-user-regrastration.vercel.app/')
+* Backend: [MongoDB Atlas User Registration Backend]('https://cloud-user-regrastrationbackend.vercel.app/')
+* Video Demonstration: [Download Video]()
 
 ## Project Overview
-
-This project implements a secure authentication system using JWT and file-based user data storage. It showcases the integration of a React frontend with a Node.js/Express.js backend to provide user registration, login, and protected route access, all while managing user data in JSON files.
+This project demonstrates cloud-based user data storage using MongoDB Atlas with a Node.js/Express.js backend and a React frontend. It showcases the integration of a React frontend with a cloud database to provide user registration and dashboard functionality.
 
 ## What I Learned
+* Implementing **cloud database storage** in a Node.js application
+* Integrating **MongoDB Atlas** for persistent data storage
+* Creating scalable backend endpoints for user registration
+* Managing user data in a cloud database
+* Building responsive React frontend for data collection
+* Implementing error handling in registration process
+* Handling data transmission between frontend and backend
+* Creating dynamic user dashboards
 
-- Implementing **file-based user data storage** in a Node.js application.
-- Creating and managing **JSON files** for persistent data storage.
-- Implementing **JWT-based authentication** with file-stored user credentials.
-- Securing routes in an **Express.js** backend using middleware and file-based data.
-- Managing authentication state in a **React** frontend application.
-- Handling token storage and transmission securely between frontend and backend.
-- Implementing protected routes in React for file data operations.
-- Balancing file I/O operations with application performance.
-
-This project demonstrates the practical application of file handling and web security practices in a real-world scenario, showcasing the integration of file-based data management with JWT for maintaining user sessions and securing API endpoints.
+This project demonstrates the practical application of cloud database integration and full-stack web development practices in a real-world user registration scenario.
