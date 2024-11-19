@@ -33,8 +33,12 @@ const User = mongoose.model("User", userSchema);
 // Middleware
 app.use(
   cors({
-    origin: "*",
-    credentials: true,
+    origin: [
+      "https://cloud-user-regrastration.vercel.app",
+      "http://localhost:5173",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 app.use(express.json());
