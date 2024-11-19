@@ -33,7 +33,7 @@ const User = mongoose.model("User", userSchema);
 // Middleware
 app.use(
   cors({
-    origin: "https://cloud-user-regrastration.vercel.app/",
+    origin: "*",
     credentials: true,
   })
 );
