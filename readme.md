@@ -1,8 +1,8 @@
 # MongoDB Atlas User Registration Project
 
 ## Links
-* Frontend: [MongoDB Atlas User Registration Frontend]('https://cloud-user-regrastration.vercel.app/')
-* Backend: [MongoDB Atlas User Registration Backend]('https://cloud-user-regrastrationbackend.vercel.app/')
+* Frontend: [MongoDB Atlas User Registration Frontend](https://cloud-user-regrastration.vercel.app)
+* Backend: [MongoDB Atlas User Registration Backend](https://cloud-user-regrastrationbackend.vercel.app)
 
 ## Project Overview
 This project demonstrates cloud-based user data storage using MongoDB Atlas with a Node.js/Express.js backend and a React frontend. It showcases the integration of a React frontend with a cloud database to provide user registration and dashboard functionality.
