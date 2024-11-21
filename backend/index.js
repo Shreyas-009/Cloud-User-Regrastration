@@ -5,6 +5,19 @@ const cors = require("cors");
 const app = express();
 const PORT = 8080;
 
+// Middleware
+app.use(
+  cors({
+    origin: "https://cloud-user-regrastration.vercel.app",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "Strict",
+  })
+);
+app.use(express.json());
+
 // MongoDB Atlas Connection String (Replace with your actual connection string)
 const MONGODB_URI =
   "mongodb+srv://shreyastungar762:EsrJXcT5KkBIq6qx@cluster0.cyfia.mongodb.net/";
@@ -29,21 +42,6 @@ const userSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model("User", userSchema);
-
-// Middleware
-app.use(
-  cors({
-    origin: [
-      "https://cloud-user-regrastration.vercel.app",
-      "http://localhost:5173",
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
-
-app.use(cors());
-app.use(express.json());
 
 // Database Connection
 mongoose
